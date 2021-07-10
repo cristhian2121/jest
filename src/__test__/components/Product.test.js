@@ -17,12 +17,12 @@ describe('<Product/>', () => {
   });
 
   test('Add product to shop cart', () => {
-    const handleAddToCart = jest.fn(); // simulate function
+    const handleAddToCartMock = jest.fn(); // simulate function
     const wrapper = mount(
       <ProviderMock>
         <Product
           product={ProductMock}
-          handleAddToCart={handleAddToCart}
+          handleAddToCart={handleAddToCartMock}
         />
       </ProviderMock>,
     );
