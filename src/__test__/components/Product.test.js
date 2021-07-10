@@ -29,6 +29,6 @@ describe('<Product/>', () => {
     wrapper.find('button').simulate('click');
     // Validate if when click the function to add to shop cart
     // only dispatch one time
-    expect(handleAddToCart).toHaveBeenCalledTimes(1);
+    expect(handleAddToCartMock).toHaveBeenCalledTimes(1);
   });
 });
